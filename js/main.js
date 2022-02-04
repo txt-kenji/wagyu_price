@@ -1,5 +1,5 @@
 $(function(){
-  $('a[href^="#"]').click(function(){
+  $('#page-top').children('a').click(function(){
     let speed = 500;
     let href= $(this).attr("href");
     let target = $(href == "#" || href == "" ? 'html' : href);
